@@ -1,0 +1,206 @@
+body {
+    background-color: wheat;
+    color: black; 
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    width: 100%;
+}
+
+header {
+    background-image: url('luxa.org-opacity-changed-IMG-20240722-WA0009.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-family: 'Signika', sans-serif;
+    width: 100%;
+    margin-bottom: 2em;
+    border-bottom: solid 0.5em black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 1em;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.menu-icon {
+    display: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 1em 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* Outros estilos para as seções e elementos já fornecidos */
+
+.doces {
+    background-color: #954535;
+    padding: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: solid 0.5em black;
+    color: white;
+    border-top: solid 0.5em black;
+    margin-bottom: 2em;
+    font-size: 1.4em;
+}
+
+.doces img {
+    border: solid black 0.3em;
+}
+
+.textodoce h1 {
+    padding-bottom: 3em;
+    font-size: 2em;
+}
+
+.produtos { 
+    background-color: #954535;
+    padding: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: solid 0.5em black;
+    color: white;
+    border-top: solid 0.5em black;
+    margin-bottom: 2em;
+    font-size: 1.4em;
+}
+
+.produtos h1 {
+    font-size: 2em;
+}
+
+#sabores {
+    border-left: solid 5px black;
+    padding-left: 25%;
+}
+
+.localizacao {
+    background-color: #954535;
+    padding: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    border-top: solid 0.5em black;
+    font-size: 1.4em;
+}
+
+.localizacaotexto h1 {
+    padding-bottom: 3em;
+    font-size: 2em;
+}
+
+.contato {
+    background-color: #954535;
+    padding: 2em;
+    justify-content: space-evenly;
+    border-bottom: solid 0.5em black;
+    color: white;
+    margin-bottom: 2em;
+    font-size: 1.4em;
+}
+
+.contato h1 {
+    font-size: 2em;
+}
+
+footer {
+    justify-content: center;
+    display: flex;
+}
+
+.avaliacao {
+    background-color: #954535;
+    padding: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: solid 0.5em black;
+    color: white;
+    border-top: solid 0.5em black;
+    margin-bottom: 2em;
+    font-size: 1.4em;
+}
+
+.sobre h1 {
+    font-size: 2em;
+}
+
+.sobre {
+    background-color: #954535;
+    padding: 2em;
+    justify-content: space-evenly;
+    border-bottom: solid 0.5em black;
+    color: white;
+    border-top: solid 0.5em black;
+    margin-bottom: 2em;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .localizacao {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .contato {
+        text-align: center;
+    }
+
+    .doces,
+    .produtos,
+    .avaliacao,
+    .sobre {
+        flex-direction: column;
+        align-items: center;
+    }
+}
